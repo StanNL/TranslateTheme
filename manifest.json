@@ -1,0 +1,41 @@
+{
+	"name": "GTranslate Material Theme",
+	"version": "1.1.0",
+	"content_scripts": [
+		{
+			"matches": [
+				"https://translate.google.com/*"
+			],
+			"css": [
+				"Materialize.css",
+				"MIcons.css",
+				"Translate.css"
+			],
+			"js": [
+				"materialize.js",
+				"jQuery.js",
+				"Translate.js"
+			]
+		}
+	],
+	"manifest_version": 2,
+	"icons": {
+		"16": "icon.png",
+		"32": "icon.png",
+		"48": "icon.png",
+		"64": "icon.png",
+		"128": "icon.png"
+	},
+	"browser_action": {
+		"default_title": "Translate Material",
+		"default_popup": "popup.html",
+		"default_icon": {
+			"16": "icon.png",
+			"32": "icon.png",
+			"48": "icon.png",
+			"128": "icon.png"
+		}
+	},
+	"description": "Google Translate Material Design redesign.",
+	"options_page": "options.html"
+}
